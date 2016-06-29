@@ -1,0 +1,99 @@
+*{
+  box-sizing: border-box;
+}
+
+/*utility classes*/
+.clearfix::before, .clearfix::after {
+  content: " ";
+  display: table;
+}
+.clearfix::after {
+  clear: both;
+}
+.container{
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/*general element declarations*/
+
+body {
+    color: white;
+    font: 300 18px/30px helvetica;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: white;
+    font-family: helvetica;
+    line-height: normal;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+h1 {
+    font-size: 27px;
+    line-height: 27px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align:middle;
+}
+
+a {
+    color: #303030;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: helvetica;
+}
+
+
+
+
+/*HEADER*/
+
+.main-header{
+  background-color: white;
+  min-height: 50px;
+}
+.logo{
+  float: left;
+  margin: 25px 0;
+}
+.main-navigation{
+  float:right;
+  padding: 10px 0;
+}
+
+.main-navigation a{
+  color: black;
+  font-size: 14px;
+  font-family: helvetica;
+  margin-left: 40px;
+  padding: 40px 0;
+  display: inline-block;
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus
+{
+  color:black;
+}
+
+/*MAIN CONTENT*/
+
+.block1{
+  min-height: 400px;
+  /*background: url(../images/image1.png) no-repeat left/300px,
+              url(../images/texture1.jpg) no-repeat top right/cover grey;*/
+  background: url(../images/texture1.jpg) no-repeat top right/cover grey;
+}
+
+.shape{
+  padding-top: 30px;
+}
+
+.block2{
+  min-height: 700px;
+  background-color: white;
+}
